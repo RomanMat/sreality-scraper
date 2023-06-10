@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Items</title>
+</head>
+
+<body>
+    <h1>My Items</h1>
+    <ul>
+        {% for item in items %}
+        <li>{{ item[0] }} - <img src="{{ item[1] }}" alt="{{ item[0] }}"></li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
